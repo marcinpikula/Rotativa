@@ -1,0 +1,42 @@
+﻿@model Rotativa.Demo.Models.BirthCertViewModel
+
+@{
+    ViewBag.Title = "Template";
+}
+
+<h2>Template</h2>
+
+<div>
+    <h4>BirthCertViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamilyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
